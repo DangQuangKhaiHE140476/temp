@@ -1,0 +1,98 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<UserSecretsId>bb643d77-2ca0-4f89-9219-19849171f9b7</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Controllers\DatawareHouse\**" />
+		<Compile Remove="Logs\**" />
+		<Compile Remove="Models\**" />
+		<Compile Remove="Uploads\**" />
+		<Content Remove="Controllers\DatawareHouse\**" />
+		<Content Remove="Logs\**" />
+		<Content Remove="Models\**" />
+		<Content Remove="Uploads\**" />
+		<EmbeddedResource Remove="Controllers\DatawareHouse\**" />
+		<EmbeddedResource Remove="Logs\**" />
+		<EmbeddedResource Remove="Models\**" />
+		<EmbeddedResource Remove="Uploads\**" />
+		<None Remove="Controllers\DatawareHouse\**" />
+		<None Remove="Logs\**" />
+		<None Remove="Models\**" />
+		<None Remove="Uploads\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Controllers\Admin\NewsController.cs" />
+	  <Compile Remove="Controllers\Admin\News_CategoryController.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Remove="appsettings.Development.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="10.0.0" />
+		<PackageReference Include="Dapper" Version="2.0.35" />
+		<PackageReference Include="EPPlus" Version="6.2.6" />
+		<PackageReference Include="GitInfo" Version="2.1.2">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="GoogleAuthenticator" Version="3.2.0" />
+		<PackageReference Include="Hangfire" Version="1.7.24" />
+		<PackageReference Include="Hangfire.MemoryStorage" Version="1.7.0" />
+		<PackageReference Include="log4net" Version="2.0.12" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="3.1.16" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="3.1.16" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.5" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.17" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.6" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.6">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.17" />
+		<PackageReference Include="Microsoft.Extensions.Identity.Core" Version="3.1.17" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.11" />
+		<PackageReference Include="Serilog" Version="2.9.0" />
+		<PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+		<PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+		<PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+		<PackageReference Include="SwiftExcel" Version="1.0.7" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.6.3" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.6.3" />
+		<PackageReference Include="System.IO.Packaging" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\QLHSC07.Data\QLHSC07.Data.csproj" />
+		<ProjectReference Include="..\QLHSC07.Entity\QLHSC07.Entity.csproj" />
+		<ProjectReference Include="..\QLHSC07.Model\QLHSC07.Model.csproj" />
+		<ProjectReference Include="..\QLHSC07.Services\QLHSC07.Services.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Template\Excel\Cong_trinh.xlsx">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Template\Excel\Du_an_cong_trinh_tham_duyet_tk_pccc.xlsx">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Template\Excel\Thong_ke_van_ban_tra_loi.xlsx">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Template\Excel\Ho_so_so_hoa.xlsx">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Template\Excel\Tiep_nhan_va_tra_ket_qua.xlsx">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+
+</Project>

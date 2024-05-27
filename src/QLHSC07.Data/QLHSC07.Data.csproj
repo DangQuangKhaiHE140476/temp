@@ -1,0 +1,137 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Implements\CategoryRepository.cs" />
+    <Compile Remove="Implements\PlanningDistrictRepository.cs" />
+    <Compile Remove="Interfaces\ICategoryRepository.cs" />
+    <Compile Remove="Interfaces\IPlanningDistrictRepository.cs" />
+    <Compile Remove="Migrations\20201207152435_Add_News_Module.cs" />
+    <Compile Remove="Migrations\20201207152435_Add_News_Module.Designer.cs" />
+    <Compile Remove="Migrations\20210706170900_testmultilangentity.cs" />
+    <Compile Remove="Migrations\20210706170900_testmultilangentity.Designer.cs" />
+    <Compile Remove="Migrations\20210706171008_testmultilangentity.cs" />
+    <Compile Remove="Migrations\20210706171008_testmultilangentity.Designer.cs" />
+    <Compile Remove="Migrations\20210706175121_testmultilangentity.cs" />
+    <Compile Remove="Migrations\20210706175121_testmultilangentity.Designer.cs" />
+    <Compile Remove="Migrations\20210710074659_post_cat_service.cs" />
+    <Compile Remove="Migrations\20210710074659_post_cat_service.Designer.cs" />
+    <Compile Remove="Migrations\20210710170917_edit-category.cs" />
+    <Compile Remove="Migrations\20210710170917_edit-category.Designer.cs" />
+    <Compile Remove="Migrations\20210713070009_Create_Entity.cs" />
+    <Compile Remove="Migrations\20210713070009_Create_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20210713070500_Create_Entity.cs" />
+    <Compile Remove="Migrations\20210713070500_Create_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20210717023610_create_classified_landinfo.cs" />
+    <Compile Remove="Migrations\20210717023610_create_classified_landinfo.Designer.cs" />
+    <Compile Remove="Migrations\20210717024402_create_classified_landinfo.cs" />
+    <Compile Remove="Migrations\20210717024402_create_classified_landinfo.Designer.cs" />
+    <Compile Remove="Migrations\20210717031338_create_classified_landinfo.cs" />
+    <Compile Remove="Migrations\20210717031338_create_classified_landinfo.Designer.cs" />
+    <Compile Remove="Migrations\20210717031701_create_classified_landinfo.cs" />
+    <Compile Remove="Migrations\20210717031701_create_classified_landinfo.Designer.cs" />
+    <Compile Remove="Migrations\20210717031810_create_classified_landinfo.cs" />
+    <Compile Remove="Migrations\20210717031810_create_classified_landinfo.Designer.cs" />
+    <Compile Remove="Migrations\20210717040352_delete_landpriceinfo.cs" />
+    <Compile Remove="Migrations\20210717040352_delete_landpriceinfo.Designer.cs" />
+    <Compile Remove="Migrations\20210717040815_delete_landpriceinfo.cs" />
+    <Compile Remove="Migrations\20210717040815_delete_landpriceinfo.Designer.cs" />
+    <Compile Remove="Migrations\20210717174735_update_versin.cs" />
+    <Compile Remove="Migrations\20210717174735_update_versin.Designer.cs" />
+    <Compile Remove="Migrations\20210722132044_add_classified_PriceTotal.cs" />
+    <Compile Remove="Migrations\20210722132044_add_classified_PriceTotal.Designer.cs" />
+    <Compile Remove="Migrations\20210722132321_add_classified_PriceTotal.cs" />
+    <Compile Remove="Migrations\20210722132321_add_classified_PriceTotal.Designer.cs" />
+    <Compile Remove="Migrations\20210722140402_Add_Classified_PriceTotal_LandPriceInfo_RealEstateType.cs" />
+    <Compile Remove="Migrations\20210722140402_Add_Classified_PriceTotal_LandPriceInfo_RealEstateType.Designer.cs" />
+    <Compile Remove="Migrations\20210722160231_addPrie.cs" />
+    <Compile Remove="Migrations\20210722160231_addPrie.Designer.cs" />
+    <Compile Remove="Migrations\20210726114548_update_db_layer.cs" />
+    <Compile Remove="Migrations\20210726114548_update_db_layer.Designer.cs" />
+    <Compile Remove="Migrations\20210727162155_add-LimitAccessPermissionMap-table.cs" />
+    <Compile Remove="Migrations\20210727162155_add-LimitAccessPermissionMap-table.Designer.cs" />
+    <Compile Remove="Migrations\20210729050720_edit_price_classified1.cs" />
+    <Compile Remove="Migrations\20210729050720_edit_price_classified1.Designer.cs" />
+    <Compile Remove="Migrations\20210729162418_test.cs" />
+    <Compile Remove="Migrations\20210729162418_test.Designer.cs" />
+    <Compile Remove="Migrations\20210804063232_create_membership.cs" />
+    <Compile Remove="Migrations\20210804063232_create_membership.Designer.cs" />
+    <Compile Remove="Migrations\20210804063327_create_membership.cs" />
+    <Compile Remove="Migrations\20210804063327_create_membership.Designer.cs" />
+    <Compile Remove="Migrations\20210804070010_create_membership.cs" />
+    <Compile Remove="Migrations\20210804070010_create_membership.Designer.cs" />
+    <Compile Remove="Migrations\20210804150535_insert_data.cs" />
+    <Compile Remove="Migrations\20210804150535_insert_data.Designer.cs" />
+    <Compile Remove="Migrations\20210804160632_insert_data.cs" />
+    <Compile Remove="Migrations\20210804160632_insert_data.Designer.cs" />
+    <Compile Remove="Migrations\20210804161104_insert_data.cs" />
+    <Compile Remove="Migrations\20210804161104_insert_data.Designer.cs" />
+    <Compile Remove="Migrations\20210804165305_add_membership_user.cs" />
+    <Compile Remove="Migrations\20210804165305_add_membership_user.Designer.cs" />
+    <Compile Remove="Migrations\20210804170620_add_membership_user.cs" />
+    <Compile Remove="Migrations\20210804170620_add_membership_user.Designer.cs" />
+    <Compile Remove="Migrations\20210804170825_add_membership_user.cs" />
+    <Compile Remove="Migrations\20210804170825_add_membership_user.Designer.cs" />
+    <Compile Remove="Migrations\20210804171045_add_membership_user.cs" />
+    <Compile Remove="Migrations\20210804171045_add_membership_user.Designer.cs" />
+    <Compile Remove="Migrations\20210804171250_add_membership_user.cs" />
+    <Compile Remove="Migrations\20210804171250_add_membership_user.Designer.cs" />
+    <Compile Remove="Migrations\20210804172042_insert_data_membership.cs" />
+    <Compile Remove="Migrations\20210804172042_insert_data_membership.Designer.cs" />
+    <Compile Remove="Migrations\20210804172125_add_membership_user.cs" />
+    <Compile Remove="Migrations\20210804172125_add_membership_user.Designer.cs" />
+    <Compile Remove="Migrations\20210804174914_change_membership_user_relation.cs" />
+    <Compile Remove="Migrations\20210804174914_change_membership_user_relation.Designer.cs" />
+    <Compile Remove="Migrations\20210804175129_change_membership_user_relation.cs" />
+    <Compile Remove="Migrations\20210804175129_change_membership_user_relation.Designer.cs" />
+    <Compile Remove="Migrations\20210804180201_add-membership-table.cs" />
+    <Compile Remove="Migrations\20210804180201_add-membership-table.Designer.cs" />
+    <Compile Remove="Migrations\20210806105127_add_location_address.cs" />
+    <Compile Remove="Migrations\20210806105127_add_location_address.Designer.cs" />
+    <Compile Remove="Migrations\20210813134057_Add_ExpiredTime_UserToken.cs" />
+    <Compile Remove="Migrations\20210813134057_Add_ExpiredTime_UserToken.Designer.cs" />
+    <Compile Remove="Migrations\20210817150628_MultiSizeImagePaths.cs" />
+    <Compile Remove="Migrations\20210817150628_MultiSizeImagePaths.Designer.cs" />
+    <Compile Remove="Migrations\20210905170634_Add_My_Favourite.cs" />
+    <Compile Remove="Migrations\20210905170634_Add_My_Favourite.Designer.cs" />
+    <Compile Remove="Migrations\20210927080445_Add_District_Commune_Planning.cs" />
+    <Compile Remove="Migrations\20210927080445_Add_District_Commune_Planning.Designer.cs" />
+    <Compile Remove="Migrations\20211105113603_initial_db.cs" />
+    <Compile Remove="Migrations\20211105113603_initial_db.Designer.cs" />
+    <Compile Remove="Migrations\20211106093305_initial.cs" />
+    <Compile Remove="Migrations\20211106093305_initial.Designer.cs" />
+    <Compile Remove="Migrations\20211108111136_init.cs" />
+    <Compile Remove="Migrations\20211108111136_init.Designer.cs" />
+    <Compile Remove="Migrations\20211109162943_change.cs" />
+    <Compile Remove="Migrations\20211109162943_change.Designer.cs" />
+    <Compile Remove="Migrations\20211118165837_remove_constructtype.cs" />
+    <Compile Remove="Migrations\20211118165837_remove_constructtype.Designer.cs" />
+    <Compile Remove="Migrations\20220216111423_add_ProjectHasCommune_table.cs" />
+    <Compile Remove="Migrations\20220216111423_add_ProjectHasCommune_table.Designer.cs" />
+    <Compile Remove="Migrations\20230223102149_update-rrp.cs" />
+    <Compile Remove="Migrations\20230223102149_update-rrp.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="3.1.17" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QLHSC07.Entity\QLHSC07.Entity.csproj" />
+    <ProjectReference Include="..\QLHSC07.Model\QLHSC07.Model.csproj" />
+  </ItemGroup>
+
+</Project>

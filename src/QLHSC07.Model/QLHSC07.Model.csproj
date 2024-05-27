@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ConsultantCommunity\**" />
+    <EmbeddedResource Remove="ConsultantCommunity\**" />
+    <None Remove="ConsultantCommunity\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ResponseData.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QLHSC07.CORE\QLHSC07.CORE.csproj" />
+    <ProjectReference Include="..\QLHSC07.Entity\QLHSC07.Entity.csproj" />
+    <ProjectReference Include="..\QLHSC07.Infrastructure\QLHSC07.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
